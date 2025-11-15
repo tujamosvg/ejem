@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delizzia Pizza - Siempre Delicioso!</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Estilos movidos a style.css -->
+</head>
+<body>
+  <!-- SPLASH SCREEN -->
+  <div class="splash-screen" id="splashScreen">
+    <div class="splash-logo"><img src="imagen/Gemini_logo1.png" alt="Logo Delizzia" style="width: 100%; height: 100%; object-fit: contain;" /></div>
+    <div class="splash-text">
+      <h1>Delizzia Pizza</h1>
+      <p>¡Siempre Delicioso!</p>
+    </div>
+    <div class="loading-container">
+      <div class="loading-bar">
+        <div class="loading-progress" id="loadingProgress"></div>
+      </div>
+      <div class="loading-text" id="loadingText">Cargando... 0%</div>
+    </div>
+  </div>
+
+  <!-- NAVEGADOR -->
+  <nav id="navbar">
+    <a href="ini.html" class="logo">
+      <div class="logo-icon">
+        <img src="imagen/Gemini_logo1.png" alt="Logo Delizzia" style="width: 100%; height: 100%; object-fit: contain;" />
+      </div>
+      <span class="logo-text">Delizzia</span>
+    </a>
+
+    <ul class="menu" id="menu">
+      <li><a href="ini.html">Inicio</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="buffet.html">Buffet</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li style="padding: 0; margin: 0;">
+        <a href="https://api.whatsapp.com/send?phone=527472242647&amp;text=Hola%20Delizzia%20Pizza,%20quiero%20hacer%20un%20pedido" target="_blank" style="text-decoration: none;">
+          <button class="slice" style="font-size: 18px; padding: 0.3em 0.8em; border-radius: 0.2em; white-space: nowrap;">
+            <span class="text">Ordena ahora</span>
+          </button>
+        </a>
+      </li>
+    </ul>
+
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- HERO HEADER -->
+  <section id="inicio" class="hero-header">
+    <div class="pizza-container">
+      <img src="imagen/imagen header.png" alt="Pizza Delizzia" class="pizza-image">
+    </div>
+    
+    <div class="hero-content" id="heroContent">
+      <h1 class="hero-title" id="heroTitle"></h1>
+      <p class="hero-subtitle">Siempre Delicioso!</p>
+      <div class="hero-buttons">
+        <a href="https://api.whatsapp.com/send?phone=527472242647&amp;text=Hola%20Delizzia%20Pizza,%20quiero%20hacer%20un%20pedido" target="_blank" class="btn btn-primary">Hacer Pedido</a>
+        <a href="menu.html" class="btn btn-secondary">Ver Menu</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator"></div>
+  </section>
+
+  <!-- SECCIÓN BIENVENIDA -->
+  <section id="bienvenida" class="welcome-section">
+    <h2 class="welcome-title">Bienvenidos a Delizzia</h2>
+    <div class="welcome-content">
+      <div class="welcome-image-container">
+        <img src="imagen/biendeli.jpg" alt="Pizzería" class="welcome-image">
+        <div class="welcome-image-overlay"></div>
+      </div>
+      <div class="welcome-text">
+        <h3>Nuestra Historia</h3>
+        <p>
+          Desde 2019, Delizzia Pizza ha sido el corazón de nuestra comunidad, 
+          sirviendo las pizzas más deliciosas con recetas tradicionales
+          transmitidas de generación en generación.
+        </p>
+        <p>
+          Comenzamos como un pequeño horno familiar y nos hemos convertido en 
+          el lugar favorito de miles de clientes que buscan calidad, sabor 
+          auténtico y una experiencia gastronómica inolvidable.
+        </p>
+        <p>
+          Cada pizza que sale de nuestro horno está hecha con amor, ingredientes 
+          frescos de primera calidad y la pasión de quienes amamos la verdadera 
+          comida deliciosa. Nuestro compromiso es simple: hacer que cada visita 
+          sea especial y cada bocado, memorable.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMOCIONES -->
+  <section id="promociones" class="promotions-section nueva-promociones">
+    <h2 class="promotions-title animate__animated animate__fadeInDown">
+      <span class="highlight">¡Promociones Especiales para Ti!</span>
+    </h2>
+    <p class="promos-subtitle animate__animated animate__fadeInUp">
+      Aprovecha las ofertas de temporada y déjate tentar por nuestros sabores exclusivos. ¡Solo por tiempo limitado!
+    </p>
+    <div class="promo-cards-container">
+      <!-- PROMO 1 -->
+      <div class="promo-card animate__animated animate__zoomIn" style="--delay: 0s;">
+        <div class="promo-image-wrapper">
+          <img src="imagen/promo10a.jpg" alt="10 Alitas o 300gr de boneless" class="promo-card-image">
+          <span class="promo-ribbon">Favorita</span>
+        </div>
+        <div class="promo-card-content">
+          <h3>10 Alitas o 300gr de Boneless</h3>
+          <ul class="promo-features">
+            <li>10 alitas o 300gr de boneless</li>
+            <li>Incluye 2 bebidas</li>
+          </ul>
+          <div class="promo-price-tag">
+            <span>$199</span>
+          </div>
+          <a 
+            href="https://api.whatsapp.com/send?phone=527472242647&amp;text=Hola%20Delizzia%20Pizza,%20quiero%20ordenar:%2010%20Alitas%20o%20300gr%20de%20boneless%20+%202%20bebidas%20por%20$199"
+            target="_blank" class="btn-ordenar-ahora">
+            <span>Ordenar Ahora</span>
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M2 12h20m-7-7 7 7-7 7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- PROMO 2 -->
+      <div class="promo-card animate__animated animate__zoomIn" style="--delay: .15s;">
+        <div class="promo-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="1kg de alitas + 2 bebidas" class="promo-card-image">
+        </div>
+        <div class="promo-card-content">
+          <h3>1kg de Alitas + 2 Bebidas</h3>
+          <ul class="promo-features">
+            <li>1kg de alitas</li>
+            <li>Incluye 2 bebidas</li>
+          </ul>
+          <div class="promo-price-tag">
+            <span>$299</span>
+          </div>
+          <a 
+            href="https://api.whatsapp.com/send?phone=527472242647&amp;text=Hola%20Delizzia%20Pizza,%20quiero%20ordenar:%201kg%20de%20alitas%20+%202%20bebidas%20por%20$299"
+            target="_blank" class="btn-ordenar-ahora">
+            <span>Ordenar Ahora</span>
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M2 12h20m-7-7 7 7-7 7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- PROMO 3 -->
+      <div class="promo-card animate__animated animate__zoomIn" style="--delay: .3s;">
+        <div class="promo-image-wrapper">
+          <img src="imagen/promo_2y1.jpg" alt="Martes de Pizza Individual" class="promo-card-image">
+          <span class="promo-ribbon promo-dia">viernes</span>
+        </div>
+        <div class="promo-card-content">
+          <h3>viernes de 2x1 en pizza</h3>
+          <ul class="promo-features">
+            <li>2x1 en todas las especialedades</li>
+            <li>*solo consumo en restaurante</li>
+          </ul>
+          <div class="promo-price-tag">
+            <span>2x1</span>
+          </div>
+          <a 
+            href="https://api.whatsapp.com/send?phone=527472242647&amp;text=Hola%20Delizzia%20Pizza,%20quiero%20el%202x1%20de%20pizza"
+            target="_blank" class="btn-ordenar-ahora">
+            <span>Ordenar Ahora</span>
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M2 12h20m-7-7 7 7-7 7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Optionally add Animate.css for fade/slide/zoomIn animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion" class="location-section">
+    <h2 class="location-title">Nuestra Ubicación</h2>
+    <div class="location-container">
+      <div class="location-info">
+        <h3>Encuéntranos Aquí</h3>
+        <div class="address-item">
+          <div class="address-icon">📍</div>
+          <div class="address-text">
+            <strong>Dirección:</strong><br>
+            Calle Cuauhtémoc Esq. 16 de Septiembre, Col. Centro<br>
+            Chilpancingo, Guerrero, México
+          </div>
+        </div>
+        <div class="address-item">
+          <div class="address-icon">📞</div>
+          <div class="address-text">
+            <strong>Teléfono:</strong><br>
+            7472242647  
+          </div>
+        </div>
+        <div class="address-item">
+          <div class="address-icon">🕒</div>
+          <div class="address-text">
+            <strong>Horario:</strong><br>
+            Lunes a Domingo<br>
+            03:30 PM - 10:00 PM
+          </div>
+        </div>
+        <a href="https://maps.app.goo.gl/zyG46prv5Lxh6og76" target="_blank" class="btn btn-primary" style="margin-top: 2rem;">
+          Abrir en Google Maps
+        </a>
+      </div>
+      <div class="map-container">
+        <iframe 
+          src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.0066603391285!2d-99.49951026588676!3d17.553918235402215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cbedc76888aacb%3A0x44dfe9df2880c4dd!2sDelizzia%20-%20Pizza%2C%20Alitas%20y%20Buffet!5e0!3m2!1ses-419!2smx!4v1763080110973!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Delizzia Pizza</h4>
+        <p>La mejor pizza de Chilpancingo desde 2019. Calidad, sabor y tradición en cada rebanada.</p>
+        <!-- From Uiverse.io by wilsondesouza -->
+        <ul class="example-2">
+          <li class="icon-content">
+            <a
+              data-social="whatsapp"
+              aria-label="Whatsapp"
+              href="https://api.whatsapp.com/send?phone=527472242647&amp;text=Hola%20Delizzia%20Pizza"
+            >
+              <div class="filled"></div>
+              <svg
+                xml:space="preserve"
+                viewBox="0 0 24 24"
+                class="bi bi-whatsapp"
+                fill="currentColor"
+                height="24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">Whatsapp</div>
+          </li>
+          <li class="icon-content">
+            <a
+              data-social="facebook"
+              aria-label="Facebook"
+              href="https://www.facebook.com/DelizziaPizzaGro"
+            >
+              <div class="filled"></div>
+              <svg
+                xml:space="preserve"
+                viewBox="0 0 24 24"
+                class="bi bi-facbook"
+                fill="currentColor"
+                height="24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">Facebook</div>
+          </li>
+          <li class="icon-content">
+            <a
+              data-social="instagram"
+              aria-label="Instagram"
+              href="https://www.instagram.com/delizzia.pizzagro"
+            >
+              <div class="filled"></div>
+              <svg
+                xml:space="preserve"
+                viewBox="0 0 16 16"
+                class="bi bi-instagram"
+                fill="currentColor"
+                height="16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                ></path>
+              </svg>
+            </a>
+            <div class="tooltip">Instagram</div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <a href="ini.html">Inicio</a>
+        <a href="menu.html">Menu</a>
+        <a href="buffet.html">Buffet</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Horarios</h4>
+        <p><strong>Lunes a Domingo:</strong><br>03:30 PM - 10:00 PM</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>📞 7472242647</p>
+        <p>📧 info@delizzia.com</p>
+        <p>📍 Calle Cuauhtémoc Esq. 16 de Septiembre, Col. Centro<br>Chilpancingo, Guerrero, México</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Delizzia Pizza. Todos los derechos reservados. | Hecho con ❤️ en AST3C</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

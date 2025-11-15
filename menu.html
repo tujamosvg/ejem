@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delizzia - Menú</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Estilos movidos a style.css -->
+</head>
+<body class="menu-page">
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav id="navbar">
+        <a href="ini.html" class="logo">
+            <div class="logo-icon">
+                <img src="imagen/Gemini_logo1.png" alt="Logo Delizzia" style="width: 100%; height: 100%; object-fit: contain;" />
+            </div>
+            <span class="logo-text">Delizzia</span>
+        </a>
+
+        <ul class="menu" id="navMenu">
+            <li><a href="ini.html">Inicio</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="buffet.html">Buffet</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li style="padding: 0; margin: 0;">
+                <a href="https://api.whatsapp.com/send?phone=527472242647&amp;text=Hola%20Delizzia%20Pizza,%20quiero%20hacer%20un%20pedido" target="_blank" style="text-decoration: none;">
+                    <button class="slice" style="font-size: 18px; padding: 0.3em 0.8em; border-radius: 0.2em; white-space: nowrap;">
+                        <span class="text">Ordena ahora</span>
+                    </button>
+                </a>
+            </li>
+        </ul>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="inicio">
+        <div class="hero-container">
+            <!-- TEXTO A LA IZQUIERDA (desktop) / ABAJO (móvil) -->
+            <div class="hero-content">
+                <h1>Delizzia</h1>
+                <p class="hero-description">
+                    Descubre el sabor único de nuestras pizzas artesanales, alitas crujientes y hamburguesas deliciosas. La experiencia culinaria que estabas buscando.
+                </p>
+                <a href="#menu" class="hero-cta">Explorar Menú</a>
+            </div>
+
+            <!-- IMAGEN A LA DERECHA (desktop) / ARRIBA (móvil) -->
+            <div class="hero-image-container">
+                <div class="hero-image-bg"></div>
+                <img 
+                    src="imagen/deuzbur.png" 
+                    alt="Hamburguesa principal" 
+                    class="hero-main-image"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVEGACIÓN SECUNDARIA (CATEGORÍAS) -->
+    <nav class="category-nav" id="categoryNav">
+        <ul class="category-list">
+            <li><button class="category-btn active" data-category="all">Todo</button></li>
+            <li><button class="category-btn" data-category="pizzas">🍕 Pizzas</button></li>
+            <li><button class="category-btn" data-category="alitas">🍗 Alitas y Boneless</button></li>
+            <li><button class="category-btn" data-category="hamburguesas">🍔 Hamburguesas</button></li>
+            <li><button class="category-btn" data-category="snacks">🍟 Snacks</button></li>
+            <li><button class="category-btn" data-category="botanear">🥗 Botanear</button></li>
+            <li><button class="category-btn" data-category="bebidas">🥤 Bebidas</button></li>
+            <li><button class="category-btn" data-category="postres">🍨 Postres</button></li>
+        </ul>
+    </nav>
+
+    <!-- SECCIÓN DE MENÚ -->
+    <section class="menu-section" id="menu">
+        <div class="section-header">
+            <div class="section-tag">Nuestro Menú</div>
+            <h2 class="section-title">Sabores que Enamoran</h2>
+            <p class="section-description">Cada platillo es preparado con ingredientes frescos y recetas únicas que harán de tu experiencia algo inolvidable.</p>
+        </div>
+
+        <!-- PIZZAS TRADICIONALES -->
+        <div class="menu-category" data-category="pizzas">
+            <div class="category-header">
+                <span class="category-icon">🍕</span>
+                <h3 class="category-title">Pizzas Tradicionales</h3>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Producto destacado con imagen -->
+                <div class="product-featured">
+                    <svg class="product-image" viewBox="0 0 400 400">
+                        <circle cx="200" cy="200" r="180" fill="#F4A460"/>
+                        <circle cx="200" cy="200" r="170" fill="#FFD700"/>
+                        <circle cx="200" cy="200" r="160" fill="#FF6347"/>
+                        <!-- Pepperoni -->
+                        <circle cx="150" cy="150" r="20" fill="#8B0000"/>
+                        <circle cx="250" cy="150" r="20" fill="#8B0000"/>
+                        <circle cx="200" cy="200" r="20" fill="#8B0000"/>
+                        <circle cx="150" cy="250" r="20" fill="#8B0000"/>
+                        <circle cx="250" cy="250" r="20" fill="#8B0000"/>
+                        <circle cx="200" cy="120" r="20" fill="#8B0000"/>
+                        <circle cx="120" cy="200" r="20" fill="#8B0000"/>
+                        <circle cx="280" cy="200" r="20" fill="#8B0000"/>
+                    </svg>
+                    <div class="product-info">
+                        <h3>HAWAIANA</h3>
+                        <p>Deliciosa combinación de jamón premium, piña dulce y jugosa, cubierta con abundante queso mozzarella derretido. El equilibrio perfecto entre lo salado y lo dulce.</p>
+                        <span class="product-badge">Disponible en 4 tamaños</span>
+                    </div>
+                </div>
+
+                <!-- Resto de productos en texto -->
+                <div class="products-simple">
+                    <div class="product-card">
+                        <h4>VEGETARIANA</h4>
+                        <p>Champiñones frescos, pimientos coloridos, piña, aceitunas negras y abundante queso mozzarella.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>PEPPERONI</h4>
+                        <p>Clásica pizza con generosas rebanadas de pepperoni y queso mozzarella derretido.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>MEXICANA</h4>
+                        <p>Frijoles refritos, chorizo mexicano, jalapeños picantes, cebolla fresca y queso fundido.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>QUESOS</h4>
+                        <p>Exquisita mezcla de queso manchego, queso crema y queso mozzarella. Para los amantes del queso.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PIZZAS ESPECIALIDADES -->
+        <div class="menu-category" data-category="pizzas">
+            <div class="category-header">
+                <span class="category-icon">⭐</span>
+                <h3 class="category-title">Especialidades</h3>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-featured">
+                    <svg class="product-image" viewBox="0 0 400 400">
+                        <circle cx="200" cy="200" r="180" fill="#8B4513"/>
+                        <circle cx="200" cy="200" r="170" fill="#D2691E"/>
+                        <circle cx="200" cy="200" r="160" fill="#CD853F"/>
+                        <!-- Carne y toppings -->
+                        <rect x="140" y="140" width="40" height="25" rx="5" fill="#654321"/>
+                        <rect x="220" y="160" width="35" height="20" rx="5" fill="#654321"/>
+                        <rect x="170" y="200" width="45" height="30" rx="5" fill="#654321"/>
+                        <rect x="230" y="220" width="38" height="22" rx="5" fill="#654321"/>
+                        <circle cx="180" cy="170" r="12" fill="#8B0000"/>
+                        <circle cx="240" cy="190" r="12" fill="#8B0000"/>
+                    </svg>
+                    <div class="product-info">
+                        <h3>PIZZA DE ARRACHERA</h3>
+                        <p>150gr de arrachera premium, papas gajo crujientes, tocino ahumado y queso parmesano. Una explosión de sabor gourmet.</p>
+                        <span class="product-badge">⭐ Especialidad de la Casa</span>
+                    </div>
+                </div>
+
+                <div class="products-simple">
+                    <div class="product-card">
+                        <h4>AZTECA</h4>
+                        <p>Chorizo artesanal, carne molida sazonada, cebolla, jalapeño y queso fundido.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>CARNES FRÍAS</h4>
+                        <p>Salchicha, jamón, tocino crujiente, pepperoni, chorizo y abundante queso.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>TEXANA</h4>
+                        <p>Carne enchilada con especias, chorizo mexicano, jalapeños, cebolla fresca y queso.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>PIZZABROSA</h4>
+                        <p>Carne molida, chorizo, pepperoni, pimientos asados, especias secretas y queso fundido.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>PASTOR</h4>
+                        <p>Carne al pastor marinada, piña asada, cebolla, cilantro fresco y queso mozzarella.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>SUPREME DEUZ</h4>
+                        <p>Jamón, chorizo, salchicha, pollo, pimientos, champiñones, cebolla, jalapeño y queso.</p>
+                        <div class="product-meta">Chica • Mediana • Grande • Familiar</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>DEUZ ESPECIAL</h4>
+                        <p>Jamón, chorizo, salchicha, pollo, tocino, pepperoni, champiñones, aceitunas y queso.</p>
+                        <div class="product-meta">⭐ La más completa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ALITAS Y BONELESS -->
+        <div class="menu-category" data-category="alitas">
+            <div class="category-header">
+                <span class="category-icon">🍗</span>
+                <h3 class="category-title">Alitas y Boneless</h3>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-featured">
+                    <svg class="product-image" viewBox="0 0 400 400">
+                        <defs>
+                            <radialGradient id="chickenGrad">
+                                <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+                            </radialGradient>
+                        </defs>
+                        <!-- Alitas -->
+                        <ellipse cx="150" cy="150" rx="45" ry="30" fill="url(#chickenGrad)"/>
+                        <ellipse cx="250" cy="160" rx="40" ry="28" fill="url(#chickenGrad)"/>
+                        <ellipse cx="200" cy="220" rx="48" ry="32" fill="url(#chickenGrad)"/>
+                        <ellipse cx="140" cy="240" rx="42" ry="29" fill="url(#chickenGrad)"/>
+                        <ellipse cx="260" cy="230" rx="44" ry="30" fill="url(#chickenGrad)"/>
+                        <!-- Detalles -->
+                        <circle cx="150" cy="150" r="3" fill="#8B4513"/>
+                        <circle cx="250" cy="160" r="3" fill="#8B4513"/>
+                        <circle cx="200" cy="220" r="3" fill="#8B4513"/>
+                    </svg>
+                    <div class="product-info">
+                        <h3>BONELESS</h3>
+                        <p>Tiernos trozos de pollo sin hueso, empanizados a la perfección y fritos hasta quedar crujientes. Disponibles con cualquiera de nuestras deliciosas salsas.</p>
+                        <span class="product-badge">De 1/2 kg a 1 kg</span>
+                    </div>
+                </div>
+
+                <div class="products-simple">
+                    <div class="product-card">
+                        <h4>Alitas 6 PZS</h4>
+                        <p>Porción perfecta para probar nuestras deliciosas salsas.</p>
+                        <div class="product-meta">Incluye salsa y aderezo</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>Alitas 10 PZS</h4>
+                        <p>Porción individual ideal para acompañar tu comida.</p>
+                        <div class="product-meta">Incluye salsa y aderezo</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>Alitas 15 PZS</h4>
+                        <p>Perfecta para compartir entre dos personas.</p>
+                        <div class="product-meta">Incluye salsa y aderezo</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>Alitas 20 PZS</h4>
+                        <p>Porción generosa para compartir en grupo.</p>
+                        <div class="product-meta">Incluye salsa y aderezo</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>Alitas 25 PZS</h4>
+                        <p>Ideal para reuniones familiares pequeñas.</p>
+                        <div class="product-meta">Incluye salsa y aderezo</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>Alitas 30 PZS</h4>
+                        <p>Gran variedad para que todos disfruten.</p>
+                        <div class="product-meta">Incluye salsa y aderezo</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>Alitas 50 PZS</h4>
+                        <p>Perfecta para fiestas y eventos especiales.</p>
+                        <div class="product-meta">🎉 Para eventos</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>Boneless 1/2 KG</h4>
+                        <p>Alitas tradicionales con hueso, jugosas por dentro y crujientes por fuera.</p>
+                        <div class="product-meta">Peso en crudo</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>Boneless 1 KG</h4>
+                        <p>Porción completa de alitas para compartir en familia.</p>
+                        <div class="product-meta">Peso en crudo</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salsas disponibles -->
+            <div style="margin-top: 50px; padding: 40px; background: var(--light-peach); border-radius: 20px;">
+                <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; color: var(--dark-text);">🌶️ Salsas Disponibles</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; font-size: 0.95rem; color: var(--gray-text);">
+                    <div>✨ BBQ</div>
+                    <div>✨ TERIYAKI</div>
+                    <div>✨ AJO PARMESANO</div>
+                    <div>✨ LEMON PEPPER</div>
+                    <div>✨ MEZCAL</div>
+                    <div>✨ GUACAMOLE</div>
+                    <div>✨ PIÑA COLADA</div>
+                    <div>🔥🔥🔥 BÚFALO</div>
+                    <div>🔥🔥🔥 VALENTINA</div>
+                    <div>🔥🔥🔥 NARANJA CHIPOTLE</div>
+                    <div>🔥🔥🔥🔥 PIÑA HABANERO</div>
+                    <div>🔥🔥🔥🔥 MANGO HABANERO</div>
+                    <div>🔥🔥🔥🔥 TAMARINDO HABANERO</div>
+                    <div>🔥🔥🔥🔥 BBQ HOT</div>
+                    <div>🔥🔥🔥🔥 HABANERO</div>
+                    <div>🔥🔥🔥🔥 CAJUN</div>
+                    <div>🔥🔥🔥 JALAPEÑO</div>
+                    <div>🔥🔥🔥🔥 FRESA HABANERO</div>
+                    <div>🔥🔥🔥🔥 UVA HABANERO</div>
+                    <div>🔥🔥🔥🔥 MARACUYÁ HABANERO</div>
+                    <div>🔥🔥🔥🔥 MANGO, MARACUYÁ Y HABANERO</div>
+                    <div>🔥🔥🔥 TAKIS FUEGO</div>
+                    <div>🔥🔥🔥 CHEETOS FLAMING HOT</div>  
+                </div>
+            </div>
+        </div>
+
+        <!-- HAMBURGUESAS -->
+        <div class="menu-category" data-category="hamburguesas">
+            <div class="category-header">
+                <span class="category-icon">🍔</span>
+                <h3 class="category-title">Hamburguesas</h3>
+            </div>
+
+            <div style="margin-bottom: 30px; padding: 25px; background: var(--warm-beige); border-radius: 15px; text-align: center;">
+                <p style="font-size: 1.1rem; color: var(--dark-text); font-weight: 500;">Pan a elegir: <strong style="color: var(--primary-orange);">PAN BRIOCHE</strong> o <strong style="color: var(--primary-orange);">PAN ARTESANO</strong></p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-featured">
+                    <svg class="product-image" viewBox="0 0 400 400">
+                        <defs>
+                            <linearGradient id="bunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F4A460;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#D2691E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Hamburguesa completa -->
+                        <ellipse cx="200" cy="110" rx="140" ry="55" fill="url(#bunGrad)"/>
+                        <ellipse cx="200" cy="110" rx="130" ry="45" fill="#DEB887"/>
+                        <!-- Lechuga -->
+                        <path d="M 70 160 Q 200 140 330 160" fill="#90EE90" stroke="#228B22" stroke-width="2"/>
+                        <!-- Tomate -->
+                        <rect x="80" y="175" width="240" height="18" rx="5" fill="#FF6347"/>
+                        <!-- Carne -->
+                        <rect x="75" y="200" width="250" height="35" rx="5" fill="#654321"/>
+                        <!-- Queso -->
+                        <path d="M 70 240 L 330 240 L 320 260 L 80 260 Z" fill="#FFD700"/>
+                        <!-- Pan inferior -->
+                        <ellipse cx="200" cy="280" rx="145" ry="38" fill="#8B4513"/>
+                        <ellipse cx="200" cy="276" rx="135" ry="33" fill="#A0522D"/>
+                        <!-- Semillas -->
+                        <circle cx="150" cy="98" r="3" fill="#F5DEB3"/>
+                        <circle cx="180" cy="95" r="3" fill="#F5DEB3"/>
+                        <circle cx="220" cy="96" r="3" fill="#F5DEB3"/>
+                        <circle cx="250" cy="100" r="3" fill="#F5DEB3"/>
+                    </svg>
+                    <div class="product-info">
+                        <h3>HAMBURGUESA ARRACHERA</h3>
+                        <p>150gr de arrachera premium, queso mozzarella, capa generosa de guacamole, lechuga fresca, jitomate, cebolla y chile asado.</p>
+                        <span class="product-badge">⭐ Especialidad Gourmet</span>
+                    </div>
+                </div>
+
+                <div class="products-simple">
+                    <div class="product-card">
+                        <h4>CLÁSICA</h4>
+                        <p>Carne de res jugosa, jamón, queso blanco o amarillo y verduras frescas.</p>
+                        <div class="product-meta">La tradicional que siempre enamora</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>TOCINO</h4>
+                        <p>Carne de res, tocino crujiente, queso blanco o amarillo y verduras frescas.</p>
+                        <div class="product-meta">Sabor ahumado irresistible</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>HAWAIANA</h4>
+                        <p>Carne de res, jamón premium, piña dulce, queso blanco, queso amarillo y verduras.</p>
+                        <div class="product-meta">Dulce y salado en perfecta armonía</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>MEXICANA</h4>
+                        <p>Carne de res, chorizo mexicano, queso blanco y verduras frescas.</p>
+                        <div class="product-meta">Con el toque picante tradicional</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>DE POLLO</h4>
+                        <p>Milanesa de pollo empanizada, queso blanco o amarillo y verduras frescas.</p>
+                        <div class="product-meta">Opción ligera y deliciosa</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>ESPECIAL DEUZ</h4>
+                        <p>Carne de res, champiñones salteados, queso amarillo, queso mozzarella y guacamole.</p>
+                        <div class="product-meta">Combinación premium</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>ONION BURGER</h4>
+                        <p>Carne de res, aros de cebolla crujientes, queso mozzarella y salsa BBQ.</p>
+                        <div class="product-meta">Textura y sabor únicos</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>DEUZ BURGER</h4>
+                        <p>Carne, jamón, salchicha, tocino, chorizo, queso blanco, queso amarillo y verduras.</p>
+                        <div class="product-meta">🔥 La más completa</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>DE PASTOR</h4>
+                        <p>Carne de res, carne al pastor marinada, piña, cebolla, cilantro y queso mozzarella.</p>
+                        <div class="product-meta">Sabor auténtico mexicano</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>RUTA 17</h4>
+                        <p>Doble carne de res, tocino, champiñones, queso amarillo, queso mozzarella y verduras.</p>
+                        <div class="product-meta">💪 Doble carne, doble sabor</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; padding: 30px; background: linear-gradient(135deg, var(--primary-orange), var(--soft-orange)); border-radius: 20px; text-align: center; color: var(--white);">
+                <h4 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">🎁 Convierte cualquier Hamburguesa en COMBO</h4>
+                <p style="font-size: 1.1rem;">Solo por $50 más incluye: PAPAS (200gr) + BEBIDA (500ml)</p>
+            </div>
+        </div>
+
+        <!-- HOT DOGS -->
+        <div class="menu-category" data-category="snacks">
+            <div class="category-header">
+                <span class="category-icon">🌭</span>
+                <h3 class="category-title">Hot Dogs</h3>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-featured">
+                    <svg class="product-image" viewBox="0 0 400 400">
+                        <!-- Pan -->
+                        <path d="M 80 180 Q 80 150 110 150 L 290 150 Q 320 150 320 180 L 320 240 Q 320 260 300 260 L 100 260 Q 80 260 80 240 Z" fill="#DEB887"/>
+                        <!-- Salchicha -->
+                        <ellipse cx="200" cy="200" rx="110" ry="25" fill="#CD5C5C"/>
+                        <ellipse cx="200" cy="198" rx="105" ry="22" fill="#DC143C"/>
+                        <!-- Toppings -->
+                        <path d="M 120 185 Q 140 175 160 180 Q 180 185 200 175 Q 220 185 240 180 Q 260 175 280 185" stroke="#FFD700" stroke-width="6" fill="none"/>
+                        <path d="M 130 195 Q 150 188 170 192 Q 190 196 210 188 Q 230 196 250 192 Q 270 188 290 195" stroke="#8B0000" stroke-width="5" fill="none"/>
+                    </svg>
+                    <div class="product-info">
+                        <h3>HOT DE ARRACHERA</h3>
+                        <p>Salchicha premium, arrachera tierna, queso fundido, guacamole fresco y aderezo de chipotle ahumado. Una experiencia gourmet.</p>
+                        <span class="product-badge">⭐ Premium</span>
+                    </div>
+                </div>
+
+                <div class="products-simple">
+                    <div class="product-card">
+                        <h4>CLÁSICO</h4>
+                        <p>Salchicha de alta calidad, jitomate fresco, cebolla y chile.</p>
+                        <div class="product-meta">El sabor tradicional</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>HAWAIANO</h4>
+                        <p>Salchicha, jamón, piña dulce y salsa BBQ.</p>
+                        <div class="product-meta">Combinación tropical</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>DE TOCINO</h4>
+                        <p>Salchicha, tocino crujiente, cebolla caramelizada, chile y aderezo especial.</p>
+                        <div class="product-meta">Sabor ahumado premium</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>HOT DEUZ</h4>
+                        <p>Salchicha, tocino, chorizo, queso fundido, jitomate, cebolla y chile.</p>
+                        <div class="product-meta">Cargado de sabor</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>MEXICANO</h4>
+                        <p>Salchicha, tocino, queso fundido y guacamole casero.</p>
+                        <div class="product-meta">Auténtico sabor mexicano</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SNACKS -->
+        <div class="menu-category" data-category="snacks">
+            <div class="category-header">
+                <span class="category-icon">🍟</span>
+                <h3 class="category-title">Snacks</h3>
+            </div>
+            
+            <div class="products-simple">
+                <div class="product-card">
+                    <h4>NACHOS CON QUESO</h4>
+                    <p>Crujientes nachos de maíz cubiertos con queso cheddar fundido.</p>
+                    <div class="product-meta">Aperitivo perfecto</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>PAPAS A LA FRANCESA</h4>
+                    <p>Papas fritas doradas y crujientes, sencillas o con queso fundido.</p>
+                    <div class="product-meta">Clásico irresistible</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>PAPAS GAJO</h4>
+                    <p>Papas en gajos con piel, sazonadas y horneadas hasta quedar crujientes.</p>
+                    <div class="product-meta">Más gruesas, más sabor</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>NUGGETS</h4>
+                    <p>10 piezas de tiernos nuggets de pollo empanizados y dorados.</p>
+                    <div class="product-meta">10 piezas</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>AROS DE CEBOLLA</h4>
+                    <p>10 aros de cebolla empanizados, crujientes por fuera y suaves por dentro.</p>
+                    <div class="product-meta">10 piezas</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>DEDOS DE QUESO</h4>
+                    <p>6 dedos de queso mozzarella empanizados, servidos con marinara.</p>
+                    <div class="product-meta">6 piezas</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COSTILLAS -->
+        <div class="menu-category" data-category="all">
+            <div class="category-header">
+                <span class="category-icon">🥩</span>
+                <h3 class="category-title">Costillas Delizzia</h3>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-featured">
+                    <svg class="product-image" viewBox="0 0 400 400">
+                        <defs>
+                            <linearGradient id="ribGrad">
+                                <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Costillas -->
+                        <rect x="80" y="140" width="240" height="40" rx="8" fill="url(#ribGrad)"/>
+                        <rect x="85" y="185" width="230" height="38" rx="8" fill="url(#ribGrad)"/>
+                        <rect x="90" y="228" width="220" height="36" rx="8" fill="url(#ribGrad)"/>
+                        <!-- Líneas de separación -->
+                        <line x1="130" y1="140" x2="130" y2="180" stroke="#4A2511" stroke-width="3"/>
+                        <line x1="180" y1="140" x2="180" y2="180" stroke="#4A2511" stroke-width="3"/>
+                        <line x1="230" y1="140" x2="230" y2="180" stroke="#4A2511" stroke-width="3"/>
+                        <line x1="270" y1="140" x2="270" y2="180" stroke="#4A2511" stroke-width="3"/>
+                        <!-- Glaseado BBQ -->
+                        <ellipse cx="200" cy="150" rx="80" ry="12" fill="#8B0000" opacity="0.6"/>
+                    </svg>
+                    <div class="product-info">
+                        <h3>COSTILLAS DE CERDO</h3>
+                        <p>Tiernas costillas de cerdo cocinadas con la receta secreta de la casa, bañadas en tu salsa preferida  y acompañadas de papas a la francesa (200gr).</p>
+                        <span class="product-badge">🔥 Receta de la Casa</span>
+                    </div>
+                </div>
+
+                <div class="products-simple">
+                    <div class="product-card">
+                        <h4>COSTILLAS 1/2 KG</h4>
+                        <p>Porción individual de costillas con guarnición de papas.</p>
+                        <div class="product-meta">Peso en crudo • Incluye papas 200gr</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>COSTILLAS 1 KG</h4>
+                        <p>Porción completa perfecta para compartir con guarnición de papas.</p>
+                        <div class="product-meta">Peso en crudo • Incluye papas 200gr</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARA BOTANEAR -->
+        <div class="menu-category" data-category="botanear">
+            <div class="category-header">
+                <span class="category-icon">🥗</span>
+                <h3 class="category-title">Para Botanear</h3>
+            </div>
+            
+            <div class="products-simple">
+                <div class="product-card">
+                    <h4>NACHOS MEXICANOS</h4>
+                    <p>Nachos acompañados de guacamole casero y frijoles con queso fundido.</p>
+                    <div class="product-meta">Perfectos para compartir</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>GUACAMOLE</h4>
+                    <p>Guacamole fresco preparado al momento, servido con queso y totopos.</p>
+                    <div class="product-meta">100% natural</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>PAPANACHOS</h4>
+                    <p>Papas a la francesa y nachos con tocino, jitomate, cebolla, chile, mayonesa, cátsup y queso amarillo.</p>
+                    <div class="product-meta">Fusión perfecta</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>SALCHIPAPAS</h4>
+                    <p>Papas a la francesa con salchichas rebanadas y queso amarillo fundido.</p>
+                    <div class="product-meta">Clásico latinoamericano</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>SUPER MIX</h4>
+                    <p>Súper combinación: dedos de queso (3pzs), alitas (3pzs), boneless (3pzs), papas a la francesa y vegetales.</p>
+                    <div class="product-meta">⭐ Lo mejor de todo</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>CLUB SANDWICH</h4>
+                    <p>Pan integral con pollo, tocino, jamón, queso y verduras frescas, con papas a la francesa.</p>
+                    <div class="product-meta">Opción completa</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>SINCRONIZADAS</h4>
+                    <p>3 tortillas de harina con jamón y queso, papas a la francesa y ensalada verde.</p>
+                    <div class="product-meta">Tradicionales</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>SINCRONIZADAS CHORIQUESO</h4>
+                    <p>3 tortillas de harina con chorizo y queso, papas a la francesa y ensalada verde.</p>
+                    <div class="product-meta">Sabor mexicano</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>SINCRONIZADAS DE ARRACHERA</h4>
+                    <p>3 tortillas de harina con arrachera y queso, papas a la francesa y ensalada verde.</p>
+                    <div class="product-meta">Premium</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>BURRITOS</h4>
+                    <p>Tortillas de harina con queso, frijoles refritos, lechuga, jitomate, cebolla y chile. A elegir: Jamón, Tocino o Chorizo.</p>
+                    <div class="product-meta">Relleno a elegir</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>BURRITO DE PASTOR</h4>
+                    <p>Tortillas de harina con carne al pastor, queso, frijoles refritos, lechuga, jitomate, cebolla y chile.</p>
+                    <div class="product-meta">Sabor tradicional mexicano</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>BURRITO DE ARRACHERA</h4>
+                    <p>Tortilla grande con arrachera (105gr), queso, guacamole, frijoles refritos, lechuga, jitomate, cebolla y chile.</p>
+                    <div class="product-meta">⭐ Premium</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>TACOS DE ARRACHERA</h4>
+                    <p>Tacos con arrachera premium, acompañados de queso mozzarella, guacamole y cebolla asada.</p>
+                    <div class="product-meta">Auténtico sabor mexicano</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- POSTRES -->
+        <div class="menu-category" data-category="postres">
+            <div class="category-header">
+                <span class="category-icon">🍨</span>
+                <h3 class="category-title">Postres y Extras</h3>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-featured">
+                    <svg class="product-image" viewBox="0 0 400 400">
+                        <defs>
+                            <linearGradient id="waffle" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F4A460;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#D2691E;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Waffle -->
+                        <rect x="100" y="150" width="200" height="180" rx="10" fill="url(#waffle)"/>
+                        <!-- Cuadrícula del waffle -->
+                        <line x1="100" y1="180" x2="300" y2="180" stroke="#8B4513" stroke-width="3"/>
+                        <line x1="100" y1="210" x2="300" y2="210" stroke="#8B4513" stroke-width="3"/>
+                        <line x1="100" y1="240" x2="300" y2="240" stroke="#8B4513" stroke-width="3"/>
+                        <line x1="100" y1="270" x2="300" y2="270" stroke="#8B4513" stroke-width="3"/>
+                        <line x1="100" y1="300" x2="300" y2="300" stroke="#8B4513" stroke-width="3"/>
+                        <line x1="140" y1="150" x2="140" y2="330" stroke="#8B4513" stroke-width="3"/>
+                        <line x1="180" y1="150" x2="180" y2="330" stroke="#8B4513" stroke-width="3"/>
+                        <line x1="220" y1="150" x2="220" y2="330" stroke="#8B4513" stroke-width="3"/>
+                        <line x1="260" y1="150" x2="260" y2="330" stroke="#8B4513" stroke-width="3"/>
+                        <!-- Helado -->
+                        <circle cx="200" cy="120" r="45" fill="#FFFACD"/>
+                        <ellipse cx="200" cy="130" rx="40" ry="30" fill="#FFFFE0"/>
+                        <!-- Chocolate -->
+                        <path d="M 120 140 Q 150 120 180 135 Q 210 120 240 135 Q 270 120 300 140" stroke="#8B4513" stroke-width="8" fill="none"/>
+                    </svg>
+                    <div class="product-info">
+                        <h3>WAFFLES</h3>
+                        <p>Waffles recién hechos, dorados y crujientes, servidos con chocolate líquido caliente y helado de vainilla cremoso.</p>
+                        <span class="product-badge">🍫 Delicia clásica</span>
+                    </div>
+                </div>
+
+                <div class="products-simple">
+                    <div class="product-card">
+                        <h4>HELADO</h4>
+                        <p>Helado cremoso en tres deliciosos sabores: vainilla, fresa o chocolate.</p>
+                        <div class="product-meta">3 sabores disponibles</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>PAY HELADO DE LIMÓN</h4>
+                        <p>Refrescante pay helado con el toque cítrico perfecto del limón.</p>
+                        <div class="product-meta">Refrescante y delicioso</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>PLÁTANO MACHO</h4>
+                        <p>Plátano macho preparado de forma especial, un clásico del postre mexicano.</p>
+                        <div class="product-meta">Tradición mexicana</div>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>BANANA SPLIT</h4>
+                        <p>Clásico postre con plátano, helado y toppings dulces.</p>
+                        <div class="product-meta">Para compartir</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extras -->
+            <div style="margin-top: 50px;">
+                <h4 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 30px; color: var(--dark-text);">➕ Extras</h4>
+                <div class="products-simple">
+                    <div class="product-card">
+                        <h4>QUESO CHEDDAR EXTRA</h4>
+                        <p>Porción adicional de queso cheddar fundido.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>ADEREZO RANCH EXTRA</h4>
+                        <p>Porción adicional de nuestro aderezo ranch cremoso.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>ALITA EXTRA</h4>
+                        <p>Alita individual adicional con tu salsa favorita.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>TOCINO EXTRA</h4>
+                        <p>Porción adicional de tocino crujiente.</p>
+                    </div>
+
+                    <div class="product-card">
+                        <h4>JAMÓN EXTRA</h4>
+                        <p>Porción adicional de jamón premium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BEBIDAS -->
+        <div class="menu-category" data-category="bebidas">
+            <div class="category-header">
+                <span class="category-icon">🥤</span>
+                <h3 class="category-title">Bebidas</h3>
+            </div>
+            
+            <div class="products-simple">
+                <div class="product-card">
+                    <h4>ESQUIMOS</h4>
+                    <p>Bebida helada cremosa en sabores: fresa, vainilla, chocolate y café.</p>
+                    <div class="product-meta">4 sabores disponibles</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>MALTEADAS</h4>
+                    <p>Malteadas espesas y cremosas: fresa, vainilla, chocolate y oreo.</p>
+                    <div class="product-meta">Con helado premium</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>SMOOTHIES</h4>
+                    <p>Smoothies naturales preparados con frutas frescas.</p>
+                    <div class="product-meta">Refrescante y natural</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>SODA ITALIANA</h4>
+                    <p>Refrescante soda italiana con variedad de sabores.</p>
+                    <div class="product-meta">Bebida gourmet</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>AGUA NATURAL</h4>
+                    <p>Agua purificada natural.</p>
+                    <div class="product-meta">Simple y refrescante</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>AGUA DEL DÍA</h4>
+                    <p>Agua fresca del día en vaso o jarra.</p>
+                    <div class="product-meta">Sabor del día</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>AGUA DE HORCHATA</h4>
+                    <p>Tradicional agua de horchata, dulce y cremosa.</p>
+                    <div class="product-meta">1/2 Jarra o Jarra completa</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>LIMONADA</h4>
+                    <p>Limonada natural recién preparada.</p>
+                    <div class="product-meta">1/2 Jarra o Jarra completa</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>NARANJADA</h4>
+                    <p>Naranjada natural con jugo de naranja fresco.</p>
+                    <div class="product-meta">1/2 Jarra o Jarra completa</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>CLERICOT</h4>
+                    <p>Refrescante clericot con frutas y vino.</p>
+                    <div class="product-meta">Copa individual</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>PIÑA COLADA CON ALCOHOL</h4>
+                    <p>Cremosa piña colada con ron.</p>
+                    <div class="product-meta">🍹 Cóctel tropical</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>MOJITOS</h4>
+                    <p>Refrescante mojito con hierbabuena y ron.</p>
+                    <div class="product-meta">🍹 Clásico cubano</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>TRENECITO DE MEZCAL</h4>
+                    <p>8 shots de mezcal artesanal para compartir.</p>
+                    <div class="product-meta">🥃 8 shots</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>REFRESCOS Y AGUAS</h4>
+                    <p>Refresco en lata, Coca Zero/Light, Agua mineral 355ml.</p>
+                    <div class="product-meta">Variedad disponible</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CERVEZAS Y LICORES -->
+        <div class="menu-category" data-category="bebidas">
+            <div class="category-header">
+                <span class="category-icon">🍻</span>
+                <h3 class="category-title">Cervezas y Licores</h3>
+            </div>
+            
+            <div class="products-simple">
+                <div class="product-card">
+                    <h4>CERVEZAS CORONA / VICTORIA</h4>
+                    <p>Cerveza refrescante, disponible por pieza o cubetazo de 10 piezas.</p>
+                    <div class="product-meta">Pieza o Cubetazo (10 pzs)</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>CERVEZAS MODELO</h4>
+                    <p>Negra Modelo o Modelo Especial, por pieza o cubetazo de 10 piezas.</p>
+                    <div class="product-meta">Pieza o Cubetazo (10 pzs)</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>TARRO CHELADO</h4>
+                    <p>Cerveza servida en tarro preparado con sal y limón.</p>
+                    <div class="product-meta">Tarro</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>CLAMACHEVE</h4>
+                    <p>Preparado clásico con clamato y cerveza.</p>
+                    <div class="product-meta">Refrescante</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>TARRO MICHELADO</h4>
+                    <p>Michelada clásica servida en tarro.</p>
+                    <div class="product-meta">Preparado tradicional</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>TARRO MICHELADA SABOR</h4>
+                    <p>Michelada con sabores especiales.</p>
+                    <div class="product-meta">Con twist especial</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>WHISKY J.W RED LABEL</h4>
+                    <p>Whisky Johnnie Walker Red Label, copa o botella.</p>
+                    <div class="product-meta">Copa o Botella</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>WHISKY J.W BLACK LABEL</h4>
+                    <p>Whisky Johnnie Walker Black Label, copa o botella.</p>
+                    <div class="product-meta">Copa o Botella</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>WHISKY BUCHANAN'S 12</h4>
+                    <p>Whisky Buchanan's 12 años, copa o botella.</p>
+                    <div class="product-meta">Copa o Botella</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>WHISKY GRAND OLD PARR</h4>
+                    <p>Whisky Grand Old Parr, copa o botella.</p>
+                    <div class="product-meta">Copa o Botella</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>WHISKY JACK DANIEL'S</h4>
+                    <p>Whisky Jack Daniel's Tennessee, copa o botella.</p>
+                    <div class="product-meta">Copa o Botella</div>
+                </div>
+
+                <div class="product-card">
+                    <h4>VINOS PREMIUM</h4>
+                    <p>Selección de vinos: Concha y Toro, La Cetto Nebbiolo, Casillero del Diablo, Monte Xanic, Finca las Moras y Calixa.</p>
+                    <div class="product-meta">Botella 750ml</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMBOS -->
+        <div class="menu-category" data-category="all">
+            <div class="category-header">
+                <span class="category-icon">🎁</span>
+                <h3 class="category-title">Combos Especiales</h3>
+            </div>
+
+            <div style="margin-bottom: 40px; padding: 30px; background: linear-gradient(135deg, var(--primary-orange), var(--soft-orange)); border-radius: 20px; text-align: center; color: var(--white);">
+                <h4 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 10px;">🎉 Combos para Toda Ocasión</h4>
+                <p style="font-size: 1.1rem;">Ahorra con nuestros paquetes especiales diseñados para compartir</p>
+            </div>
+            
+            <!-- Combo 1 -->
+            <div style="margin-bottom: 60px;">
+                <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 25px; color: var(--primary-orange);">Combo 1</h4>
+                <div class="products-simple">
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 1 - PIZZAS</h4>
+                        <p>Pizza Chica Tradicional (6 rebanadas) + 1 Complemento + Bebida 1L</p>
+                        <div class="product-meta">🍕 Perfecto para 1-2 personas</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 1 - ALITAS</h4>
+                        <p>5 Alitas + 1 Complemento + Bebida Chica</p>
+                        <div class="product-meta">🍗 Individual</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 1 - MIXTO</h4>
+                        <p>Pizza Chica Tradicional (6 rebanadas) + 3 Alitas + 3 Boneless + Papas Francesas + 1 Hot Dog Clásico</p>
+                        <div class="product-meta">🎪 Variedad completa</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combo 2 -->
+            <div style="margin-bottom: 60px;">
+                <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 25px; color: var(--primary-orange);">Combo 2</h4>
+                <div class="products-simple">
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 2 - PIZZAS</h4>
+                        <p>Pizza Mediana Tradicional (8 rebanadas) + 2 Complementos + Bebida 2L</p>
+                        <div class="product-meta">🍕 Para 2-3 personas</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 2 - ALITAS</h4>
+                        <p>10 Alitas + 1 Complemento + Bebida 1L</p>
+                        <div class="product-meta">🍗 Para compartir</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 2 - MIXTO</h4>
+                        <p>Pizza Mediana Tradicional (8 rebanadas) + 6 Alitas + 3 Boneless + Papas Francesas + 2 Hot Dogs Tocino</p>
+                        <div class="product-meta">🎪 Fiesta mediana</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combo 3 -->
+            <div style="margin-bottom: 60px;">
+                <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 25px; color: var(--primary-orange);">Combo 3</h4>
+                <div class="products-simple">
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 3 - PIZZAS</h4>
+                        <p>Pizza Grande Tradicional (12 rebanadas) + 2 Complementos + Bebida 2L</p>
+                        <div class="product-meta">🍕 Familia pequeña</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 3 - ALITAS</h4>
+                        <p>15 Alitas + 2 Complementos + Bebida 2L</p>
+                        <div class="product-meta">🍗 Reunión familiar</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 3 - MIXTO</h4>
+                        <p>Pizza Grande Tradicional (12 rebanadas) + 10 Alitas + 10 Boneless + 2 Papas Francesas + 1 Orden Aros Cebolla + 2 Hot Dogs</p>
+                        <div class="product-meta">🎪 Súper combo</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combo 4 -->
+            <div style="margin-bottom: 60px;">
+                <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 25px; color: var(--primary-orange);">Combo 4</h4>
+                <div class="products-simple">
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 4 - PIZZAS</h4>
+                        <p>Pizza Familiar Tradicional (16 rebanadas) + 2 Complementos + Bebida 2L</p>
+                        <div class="product-meta">🍕 Familia completa</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 4 - ALITAS</h4>
+                        <p>20 Alitas + 2 Complementos + Bebida 2L</p>
+                        <div class="product-meta">🍗 Fiesta de alitas</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange);">
+                        <h4>COMBO 4 - MIXTO</h4>
+                        <p>Pizza Familiar Tradicional (16 rebanadas) + 15 Alitas + 1/2 Kg Boneless + Papas Gajo + 1 Orden Aros Cebolla + 2 Hot Dogs</p>
+                        <div class="product-meta">🎪 Mega fiesta</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combo 5 -->
+            <div style="margin-bottom: 60px;">
+                <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 25px; color: var(--primary-orange);">Combo 5 - ⭐ MEGA COMBOS</h4>
+                <div class="products-simple">
+                    <div class="product-card" style="border-color: var(--primary-orange); background: var(--light-peach);">
+                        <h4>COMBO 5 - PIZZAS</h4>
+                        <p>Pizza MEGA Tradicional (32 rebanadas) + 3 Complementos + 2 Bebidas 2L</p>
+                        <div class="product-meta">🍕 Evento especial</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange); background: var(--light-peach);">
+                        <h4>COMBO 5 - ALITAS</h4>
+                        <p>30 Alitas + 2 Complementos + Bebida 2L</p>
+                        <div class="product-meta">🍗 Súper porción</div>
+                    </div>
+
+                    <div class="product-card" style="border-color: var(--primary-orange); background: var(--light-peach);">
+                        <h4>COMBO 5 - MIXTO</h4>
+                        <p>25 Alitas + 1 Kg Boneless + Papas Gajo + 1 Orden Aros Cebolla + 4 Hot Dogs + 250gr Costillas</p>
+                        <div class="product-meta">🎪 El combo definitivo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Delizzia Pizza</h4>
+                <p>La mejor pizza de Chilpancingo desde 2020. Calidad, sabor y tradición en cada rebanada.</p>
+                <!-- From Uiverse.io by wilsondesouza -->
+                <ul class="example-2">
+                    <li class="icon-content">
+                        <a
+                            data-social="whatsapp"
+                            aria-label="Whatsapp"
+                            href="https://api.whatsapp.com/send?phone=527472242647&amp;text=Hola%20Delizzia%20Pizza"
+                        >
+                            <div class="filled"></div>
+                            <svg
+                                xml:space="preserve"
+                                viewBox="0 0 24 24"
+                                class="bi bi-whatsapp"
+                                fill="currentColor"
+                                height="24"
+                                width="24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Whatsapp</div>
+                    </li>
+                    <li class="icon-content">
+                        <a
+                            data-social="facebook"
+                            aria-label="Facebook"
+                            href="https://www.facebook.com/DelizziaPizzaGro"
+                        >
+                            <div class="filled"></div>
+                            <svg
+                                xml:space="preserve"
+                                viewBox="0 0 24 24"
+                                class="bi bi-facbook"
+                                fill="currentColor"
+                                height="24"
+                                width="24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"
+                                ></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Facebook</div>
+                    </li>
+                    <li class="icon-content">
+                        <a
+                            data-social="instagram"
+                            aria-label="Instagram"
+                            href="https://www.instagram.com/delizzia.pizzagro"
+                        >
+                            <div class="filled"></div>
+                            <svg
+                                xml:space="preserve"
+                                viewBox="0 0 16 16"
+                                class="bi bi-instagram"
+                                fill="currentColor"
+                                height="16"
+                                width="16"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                ></path>
+                            </svg>
+                        </a>
+                        <div class="tooltip">Instagram</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <a href="ini.html">Inicio</a>
+                <a href="menu.html">Menu</a>
+                <a href="buffet.html">Buffet</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Horarios</h4>
+                <p><strong>Lunes a Domingo:</strong><br>03:30 PM - 10:00 PM</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>📞 7472242647</p>
+                <p>📧 info@delizzia.com</p>
+                <p>📍 Calle Cuauhtémoc Esq. 16 de Septiembre, Col. Centro<br>Chilpancingo, Guerrero, México</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Delizzia Pizza. Todos los derechos reservados. | Hecho con ❤️ en AST3C</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
